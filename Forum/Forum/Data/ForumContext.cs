@@ -7,5 +7,7 @@ namespace Forum.Data
     {
         public ForumContext(DbContextOptions<ForumContext> options) : base(options) { }
         public DbSet<User> Users { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Models.Thread> Threads { get; set; }
     }
 }
